@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle</title>
+    <!--link css-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--responsividade-->
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!--Tema escuro-->
+    <link rel="stylesheet" href="/css/dark-theme.css">
+    <!--Material icons link-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+  <!---------- barra lateral ------------------->
+        <aside>
+            <div class="topo">
+                <div class="logo">
+                    <!--<img src="#" alt="Logo da página"> -->
+                    <h2 class="nome">PET<span class="danger">SHOP</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="barra-lateral">
+                <a href="painel.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Painel Gerencial</h3>
+                </a>
+                <a href="caixa.html" class="active">
+                    <span class="material-icons-sharp">view_agenda</span>
+                    <h3>Caixa</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Cadastro</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Estoque</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Configurações</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+  <!--------- fim da barra lateral----------->
+
+   <main>
+    <h1>Caixa</h1>
+    <div class="date">
+        <input type="date">
+    </div>
+    
+  </main>
+  <!----- fim do main-->
+  <div class="right">
+    <div class="topo">
+        <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+            <div class="ingo">
+                <p>Bem-vindo, <b>Usuário</b></p> <!--- echo- -->
+                <small class="text-muted">Recepcionista</small>
+            </div>
+        </div>
+    </div>
+    <!---fim do topo-->
+          <div class="sales-analytics"> 
+            <div class="item add-product">
+                <div>
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Adicionar produto</h3>
+                </div>
+            </div>
+          </div>
+      </div>
+        </div>
+    
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -12,11 +12,6 @@ closeBtn.addEventListener('click', () =>{
     sideMenu.style.display = 'none';
 })
 
-changeSelect.addEventListener('click', () =>{
-    changeSelect.querySelector("a:nth-child(1)").classList.toggle("active");
-    changeSelect.querySelector("a:nth-child(2)").classList.toggle("active");
-})
-
 // trocar tema
 
 themeToggler.addEventListener('click', () =>{

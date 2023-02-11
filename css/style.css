@@ -119,7 +119,7 @@
         color: var(--color-primary);
     }
     .danger{
-        color: var(--color-danger);
+        color: #bb9b5e;
     }
     .sucess{
         color: var(--color-success);
