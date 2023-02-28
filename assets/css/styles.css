@@ -7,7 +7,7 @@
   --nav-width: 68px;
 
   /*===== Colors =====*/
-  --first-color: #4723D9;
+  --first-color: #3C58A6;
   --first-color-light: #AFA5D9;
   --white-color: #F7F6FB;
   
@@ -143,6 +143,8 @@ a{
 /*Active links*/
 .active{
   color: var(--white-color);
+  background-color: #1A274A;
+  border-radius: 5px;
 }
 
 .active::before{
@@ -153,6 +155,53 @@ a{
   height: 32px;
   background-color: var(--white-color);
 }
+
+/* Main */
+
+body{
+  background-color: #8b8b8b4b;
+}
+
+
+.main-content{
+  border-radius: 20px;
+  width: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  color: #4D72D6;
+  margin-right: 200px;
+}
+
+.title i{
+  font-size: 50px;
+}
+
+.main-content h1{
+  color: #4D72D6;
+}
+
+.line{
+  color: #4D72D6;;
+}
+
+.nav__agenda{
+  margin-top: 35px;
+}
+
+.nav__namea{
+  margin-right: 50px;
+  font-weight: bold;
+  color: #5177E0;
+}
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){

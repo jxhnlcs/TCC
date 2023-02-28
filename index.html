@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -30,38 +32,39 @@
                         <i class='bx bx-layer nav__logo-icon'></i>
                         <span class="nav__logo-name">PETSHOP</span>
                     </a>
-
+                    <hr />
                     <div class="nav__list">
                         <a href="#" class="nav__link active">
-                        <i class='bx bx-grid-alt nav__icon' ></i>
+                        <i class='bx bxs-calendar nav__icon'></i>
                             <span class="nav__name">Agenda</span>
                         </a>
 
                         <a href="#" class="nav__link">
-                            <i class='bx bx-user nav__icon' ></i>
+                            <i class='bx bx-money nav__icon'></i>
                             <span class="nav__name">Caixa</span>
                         </a>
                         
                         <a href="#" class="nav__link">
-                            <i class='bx bx-message-square-detail nav__icon' ></i>
+                            <i class='bx bxs-user nav__icon'></i>
                             <span class="nav__name">Clientes</span>
                         </a>
 
                         <a href="#" class="nav__link">
-                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="material-symbols-sharp nav__icon">pets</span>
                             <span class="nav__name">Animais</span>
                         </a>
 
                         <a href="#" class="nav__link">
-                            <i class='bx bx-folder nav__icon' ></i>
+                            <span class="material-symbols-sharp nav__icon">inventory</span>
                             <span class="nav__name">Estoque</span>
                         </a>
-
+                        <hr />
                         <a href="#" class="nav__link">
-                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                            <span class="material-symbols-sharp nav__icon">settings</span>
                             <span class="nav__name">Configurações</span>
                         </a>
                     </div>
+                    
                 </div>
 
                 <a href="#" class="nav__link">
@@ -70,8 +73,40 @@
                 </a>
             </nav>
         </div>
+    <section>
+        <div class="container">
+            <div class="title">
+                <i class='bx bxs-calendar nav__icon'></i>
+                <h1>Agenda</h1>
+            </div>
 
-        <h1>Agenda</h1>
+            <div class="main-content">
+                <h1>< 15 de Fev 2023 ></h1>
+                <div>
+                    <hr />
+                    <div class="nav__agenda">
+                        <a href="#" class="activea">
+                            <span class="nav__namea">Aguardando</span>
+                        </a>
+
+                        <a href="#" class="nav-linka">
+                            <span class="nav__namea">Atendendo</span>
+                        </a>
+                        
+                        <a href="#" class="nav-linka">
+                            <span class="nav__namea">Concluidos</span>
+                        </a>
+                        <a href="#" class="nav-linka">
+                            <span class="nav__namea">Cancelados</span>
+                        </a>
+                        <a href="#" class="nav-linka">
+                            <span class="nav__namea">Todos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
     </body>
