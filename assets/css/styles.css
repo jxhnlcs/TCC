@@ -319,5 +319,32 @@ body{
   }
 }
 
+@media screen and (max-width: 750px){
+  .content{
+    flex-direction: column;
+  }
 
+  .main-content{
+    width: 88vw;
+  }
+
+  .header{
+    width: 93%;
+  }
+
+  .column{
+    margin-right: 60px;
+  }
+
+  .nav-linka{
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .left-content{
+    margin-top: 20px;
+    width: 88vw;
+    margin-left: 0px;
+  }
+}
 
