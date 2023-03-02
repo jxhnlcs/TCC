@@ -238,7 +238,7 @@ body{
 .aguardandoPesquisa input{
   background-color: #FAFAFA;
   padding: 8px;
-  border: solid rgba(0, 0, 0, 0.589) 1px;
+  border: outset rgba(0, 0, 0, 0.24) 1px;
   border-radius: 10px;
   color: #A69B9B;
 }
