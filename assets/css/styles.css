@@ -78,7 +78,7 @@ a{
   top: 0;
   left: -30%;
   width: var(--nav-width);
-  height: 100vh;
+  height: 100%;
   background-color: var(--first-color);
   padding: .5rem 1rem 0 0;
   transition: .5s;
@@ -333,18 +333,34 @@ body{
   }
 
   .column{
-    margin-right: 60px;
+    margin-right: 35px;
   }
 
   .nav-linka{
-    font-size: 14px;
-    margin-right: 10px;
+    font-size: 13px;
+    margin-right: 1px;
   }
 
   .left-content{
     margin-top: 20px;
     width: 88vw;
     margin-left: 0px;
+  }
+
+  .aguardandoPesquisa h3{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .aguardandoPesquisa p{
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  
+  .aguardandoPesquisa input{
+    padding: 8px;
+    margin-right: 10px;
   }
 }
 
