@@ -51,6 +51,7 @@ a{
   background-color: var(--white-color);
   z-index: var(--z-fixed);
   transition: .5s;
+  position: fixed;
 }
 
 .header__toggle{
@@ -164,6 +165,7 @@ body{
 
 .content{
   display: flex;
+  height: 80vh;
 }
 
 
@@ -243,17 +245,17 @@ body{
   color: #A69B9B;
 }
 
-.none{
+.boxContent{
   margin-top: 35px;
 }
 
-.none h2{
+.boxContent h2{
   color: #868585;
   font-size: 20px;
 }
 
 .gif{
-  width: 300px;
+  width: 280px;
 }
 
 .left-content{
@@ -273,11 +275,28 @@ body{
 
 .left-content h1{
   color: #5177E0;
+  margin-top: -50px;
+  margin-bottom: 100px;
 }
 
 .left-content h3{
   color: #868585;
   margin-left: 30px
+}
+
+.boxPet{
+  background-color: #FFFCFC;
+  border: solid 1px black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.row{
+  display: flex;
+}
+
+.row h3{
+  margin-right: 150px;
 }
 
 
@@ -361,6 +380,17 @@ body{
   .aguardandoPesquisa input{
     padding: 8px;
     margin-right: 10px;
+  }
+
+  .left-content h1{
+    color: #5177E0;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
+  .left-content h3{
+    color: #868585;
+    margin-left: 10px
   }
 }
 
