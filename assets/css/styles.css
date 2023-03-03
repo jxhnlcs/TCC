@@ -247,6 +247,7 @@ body{
 
 .boxContent{
   margin-top: 35px;
+  margin-bottom: 150px;
 }
 
 .boxContent h2{
@@ -288,15 +289,16 @@ body{
   background-color: #FFFCFC;
   border: solid 1px black;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px 5px 3px 40px;
 }
 
 .row{
   display: flex;
 }
 
-.row h3{
+.boxPet h3{
   margin-right: 150px;
+  font-size: 16px;
 }
 
 
