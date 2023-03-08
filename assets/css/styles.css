@@ -163,15 +163,19 @@ body{
   background-color: #8b8b8b4b;
 }
 
+.container{
+  margin-top: 80px;
+}
+
 .content{
   display: flex;
+  flex-direction: row;
   height: 80vh;
 }
 
-
 .main-content{
   border-radius: 20px;
-  width: 80%;
+  width: 75%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -181,23 +185,12 @@ body{
 
 .title{
   display: flex;
-  align-items: center;
   color: #4D72D6;
-  margin-right: 200px;
-}
-
-.title i{
-  font-size: 50px;
 }
 
 .main-content h1{
   color: #4D72D6;
-  margin-top: 100px ;
-}
-
-
-.line{
-  color: #4D72D6;;
+  margin-top: 150px;
 }
 
 .nav__agenda{
@@ -214,44 +207,9 @@ body{
  color: #8800DC; 
 }
 
-.aguardandoPesquisa{
-  margin-top: 20px;
-}
-
-.column{
-  margin-right: 310px;
-}
-
-.aguardandoPesquisa{
-  display: flex;
-  align-items: center;
-}
-
-.aguardandoPesquisa h3{
-  color: #8800DC; 
-  font-weight: bold;
-}
-
-.aguardandoPesquisa p{
-  color: rgb(59, 59, 59);
-  font-size: 14px;
-  margin-top: -15px;
-}
-
-.aguardandoPesquisa input{
-  background-color: #FAFAFA;
-  padding: 8px;
-  border: outset rgba(0, 0, 0, 0.24) 1px;
-  border-radius: 10px;
-  color: #A69B9B;
-}
-
 .boxContent{
-  margin-top: 35px;
-  margin-bottom: 150px;
-  padding: 1px;
-  width: 65%;
-
+  margin-top: 50px;
+  margin-bottom: 200px;
 }
 
 .boxContent h2{
@@ -266,7 +224,7 @@ body{
 .left-content{
   margin-left: 20px;
   border-radius: 20px;
-  width: 20%;
+  width: 25%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -280,33 +238,12 @@ body{
 
 .left-content h1{
   color: #5177E0;
-  margin-top: -50px;
-  margin-bottom: 100px;
 }
 
 .left-content h3{
   color: #868585;
   margin-left: 30px
 }
-
-.boxPet{
-  background-color: #FFFCFC;
-  box-shadow: 0 10px 60px -30px black ;
-  border-radius: 20px;
-  padding: 1px 5px 3px 40px;
-  margin-top: 20px;
-}
-
-.row{
-  display: flex;
-}
-
-.boxPet h3{
-  margin-right: 150px;
-  font-size: 16px;
-}
-
-
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
