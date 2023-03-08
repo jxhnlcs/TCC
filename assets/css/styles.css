@@ -192,6 +192,7 @@ body{
 
 .main-content h1{
   color: #4D72D6;
+  margin-top: 100px ;
 }
 
 
@@ -248,6 +249,9 @@ body{
 .boxContent{
   margin-top: 35px;
   margin-bottom: 150px;
+  padding: 1px;
+  width: 65%;
+
 }
 
 .boxContent h2{
@@ -287,9 +291,10 @@ body{
 
 .boxPet{
   background-color: #FFFCFC;
-  border: solid 1px black;
+  box-shadow: 0 10px 60px -30px black ;
   border-radius: 20px;
-  padding: 10px 5px 3px 40px;
+  padding: 1px 5px 3px 40px;
+  margin-top: 20px;
 }
 
 .row{
@@ -382,6 +387,11 @@ body{
   .aguardandoPesquisa input{
     padding: 8px;
     margin-right: 10px;
+  }
+
+  .boxPet .row{
+    display: grid;
+    grid-template-columns: 60px 60px;
   }
 
   .left-content h1{
