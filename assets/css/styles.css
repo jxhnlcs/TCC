@@ -284,9 +284,9 @@ tbody tr:hover{
 }
 
 .status{
-  width: 75%;
   background-color: #8800DC;
-  padding: .4rem;
+  padding: .4rem 0;
+  text-align: center;
   border-radius: 2rem;
 }
 
