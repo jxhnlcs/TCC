@@ -279,6 +279,22 @@ tbody tr:nth-child(even){
   background-color: #0000000b;
 }
 
+tbody tr:hover{
+  background-color: #fff6;
+}
+
+.status{
+  width: 75%;
+  background-color: #8800DC;
+  padding: .4rem;
+  border-radius: 2rem;
+}
+
+.status.aguardando{
+  background-color: #c261ff;
+  color: #8800DC;
+}
+
 .boxContent table{
   width: 50vw;
   height: 50vh;
