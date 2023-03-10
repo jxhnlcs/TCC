@@ -199,6 +199,7 @@ body{
 .main-content h1{
   color: #4D72D6;
   margin-top: 150px;
+  margin-bottom: 20px;
 }
 
 .nav__agenda{
@@ -230,8 +231,9 @@ table{
 
 .table_body{
   width: 95%;
-  max-height: 89% - .8rem;
+  max-height: 89% - .1.6rem;
   background-color: #fffb;
+  margin-top: 30px;
 
   margin: .8rem, auto;
   border-radius: .6rem;
@@ -266,6 +268,7 @@ td img{
 table, th, td{
   border-collapse: collapse;
   padding: 1rem;
+  text-align: left;
 }
 
 thead th{
@@ -293,6 +296,21 @@ tbody tr:hover{
 .status.aguardando{
   background-color: #c261ff;
   color: #8800DC;
+}
+
+.status.atendendo{
+  background-color: rgb(96, 170, 255);
+  color: rgb(0, 38, 255);
+}
+
+.status.concluido{
+  background-color: rgb(144, 255, 144);
+  color: green;
+}
+
+.status.cancelado{
+  background-color: rgb(255, 169, 169);
+  color: red;
 }
 
 .boxContent table{
@@ -336,6 +354,13 @@ tbody tr:hover{
 }
 
 /* ===== MEDIA QUERIES=====*/
+
+@media (max-width: 1000px){
+  td:not(:first-of-type){
+    min-width: rem;
+  }
+}
+
 @media screen and (min-width: 768px){
   body{
     margin: calc(var(--header-height) + 1rem) 0 0 0;
