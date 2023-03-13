@@ -268,7 +268,7 @@ td img{
 table, th, td{
   border-collapse: collapse;
   padding: 1rem;
-  text-align: left;
+  text-align: center;
 }
 
 thead th{
@@ -276,6 +276,7 @@ thead th{
   top: 0;
   left: 0;
   background-color: #d5d1defe;
+  text-align: center;
 }
 
 tbody tr:nth-child(even){
