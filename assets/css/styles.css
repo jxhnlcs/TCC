@@ -171,6 +171,11 @@ body{
   min-height: 100vh;;
 }
 
+.row{
+  display: flex;
+  justify-content:space-between;
+}
+
 button {
   padding: 0.6rem 1.2rem;
   background-color: #888;
@@ -180,6 +185,8 @@ button {
   cursor: pointer;
   opacity: 0.9;
   font-size: 1rem;
+  margin-right: 30px;
+  margin-bottom: 15px;
 }
 
 #open-modal {
