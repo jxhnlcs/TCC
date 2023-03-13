@@ -234,10 +234,33 @@ button:hover {
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  color: #3C58A6;
+}
+
+.modal-footer{
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-footer .confirm{
+  background-color: #3C58A6;
 }
 
 .modal-body p {
   margin-bottom: 1rem;
+}
+
+.modal-body input{
+  border: none;
+  border-radius: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  box-shadow: 0 .4rem .8rem #0005;
 }
 
 #modal.hide,

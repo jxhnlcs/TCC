@@ -85,7 +85,6 @@
                 <div id="modal" class="hide">
                 <div class="modal-header">
                     <h2>Agendamento</h2>
-                    <button id="close-modal">Fechar</button>
                 </div>
                 <div class="modal-body">
                     <h5>Nome</h5>
@@ -96,12 +95,26 @@
                         <option>Cliente 2</option>
                         <option>Cliente 3</option>
                     </datalist>
-                    <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius alias
-                    voluptate doloremque, totam inventore autem quis non error! Earum
-                    ullam fuga, officiis voluptates pariatur unde et adipisci ducimus non
-                    obcaecati.
-                    </p>
+                    <h5>Pet</h5>
+                    <input type="text" placeholder="Nome do Pet" list="faixa2">
+                    <datalist id="faixa2">
+                        <option value="">Nome</option>
+                        <option>Pet</option>
+                        <option>Petzinho</option>
+                        <option>Auau</option>
+                    </datalist>
+                    <h5>Serviço</h5>
+                    <input type="text" placeholder="Serviço" list="faixa3">
+                    <datalist id="faixa3">
+                        <option value="">Nome</option>
+                        <option>Banho</option>
+                        <option>Tosa</option>
+                        <option>Banho e Tosa</option>
+                    </datalist>
+                    <div class="modal-footer">
+                        <button class="confirm" id="close-modal">Confirmar</button>
+                        <button id="close-modal">Fechar</button>
+                    </div>
                 </div>
             </div>
                 <div class="content">
