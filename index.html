@@ -110,7 +110,7 @@
                     </div>
                     <div class="modal-body">
                         <h5>Nome</h5>
-                        <input type="text" placeholder="Nome do Cliente" list="faixa">
+                        <input v-model="nameC" type="text" placeholder="Nome do Cliente" list="faixa">
                         <datalist id="faixa">
                             <option value="">Nome</option>
                             <option>Cliente 1</option>
@@ -134,7 +134,7 @@
                             <option>Raça3</option>
                         </datalist>
                         <h5>Serviço</h5>
-                        <input type="text" placeholder="Serviço" list="faixa3">
+                        <input v-model="service" type="text" placeholder="Serviço" list="faixa3">
                         <datalist id="faixa3">
                             <option value="">Nome</option>
                             <option>Banho</option>
@@ -142,7 +142,7 @@
                             <option>Banho e Tosa</option>
                         </datalist>
                         <div class="modal-footer">
-                            <button v-on:click="addPet" type="submit" class="confirm">Confirmar</button>
+                            <button v-on:click="toggleModal" v-on:click="addPet" type="submit" class="confirm">Confirmar</button>
                             <button v-on:click="toggleModal" id="close-modal">Fechar</button>
                         </div>
                     </div>
@@ -165,8 +165,8 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr v-for="comment in comments">
-                                                <td> 1 </td>
+                                            <tr v-for="(comment, index) in comments">
+                                                <td>{{index}}</td>
                                                 <td><img src="assets/img/isagi.jpg" alt=""></td>
                                                 <td> {{comment.name}} </td>
                                                 <td> {{comment.pet}}</td>
@@ -217,10 +217,18 @@
                 /* Metodo adiciona agendamento */
 
                 addPet(){
+                    if (this.nameC.trim() === '' && this.name.trim() === '' && this.raca.trim() === '' && this.service.trim() === ''){
+                        return
+                    }
                     this.comments.push({
                         name: this.name,
                         pet: this.raca
                     });
+
+                    this.nameC = '';
+                    this.name = '';
+                    this.raca = '';
+                    this.service = ''; 
                 }
             }
             })
