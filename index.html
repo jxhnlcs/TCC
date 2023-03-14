@@ -16,6 +16,9 @@
 
         <title>Agenda</title>
     </head>
+
+    <!--- Nav --->
+
     <body id="body-pd">
         <header class="header" id="header">
             <div class="header__toggle">
@@ -26,6 +29,8 @@
                 <img src="assets/img/perfil.jpg" alt="">
             </div>
         </header>
+
+        <!-- Barra lateral-->
 
         <div class="l-navbar" id="nav-bar">
             <nav class="nav">
@@ -75,142 +80,149 @@
             </a>
             </nav>
         </div>
-        <section>
-        <div class="container">
-            <div class="row">
-                <h1 class="title">Agenda</h1>
-                <button id="open-modal">Novo Agendamento</button>
-            </div>
-                <div id="fade" class="hide"></div>
-                <div id="modal" class="hide">
-                <div class="modal-header">
-                    <h2>Agendamento</h2>
-                </div>
-                <div class="modal-body">
-                    <h5>Nome</h5>
-                    <input type="text" placeholder="Nome do Cliente" list="faixa">
-                    <datalist id="faixa">
-                        <option value="">Nome</option>
-                        <option>Cliente 1</option>
-                        <option>Cliente 2</option>
-                        <option>Cliente 3</option>
-                    </datalist>
-                    <h5>Pet</h5>
-                    <input type="text" placeholder="Nome do Pet" list="faixa2">
-                    <datalist id="faixa2">
-                        <option value="">Nome</option>
-                        <option>Pet</option>
-                        <option>Petzinho</option>
-                        <option>Auau</option>
-                    </datalist>
-                    <h5>Raça</h5>
-                    <input type="text" placeholder="Raça do animal" list="faixa4">
-                    <datalist id="faixa4">
-                        <option value="">Nome</option>
-                        <option>Raça1</option>
-                        <option>Raça2</option>
-                        <option>Raça3</option>
-                    </datalist>
-                    <h5>Serviço</h5>
-                    <input type="text" placeholder="Serviço" list="faixa3">
-                    <datalist id="faixa3">
-                        <option value="">Nome</option>
-                        <option>Banho</option>
-                        <option>Tosa</option>
-                        <option>Banho e Tosa</option>
-                    </datalist>
-                    <div class="modal-footer">
-                        <button class="confirm">Confirmar</button>
-                        <button id="close-modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-                <div class="content">
-                    <div class="main-content">
-                        <h1 class="date">< 15 de Fev 2023 ></h1>
-                        <div class="boxContent">
-                            <hr />
-                            <section class="table_body">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Pet</th>
-                                            <th>Nome</th>
-                                            <th>Raça</th>
-                                            <th>Status</th>
-                                            <th>Valor</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> 1 </td>
-                                            <td><img src="assets/img/isagi.jpg" alt=""></td>
-                                            <td> FSA </td>
-                                            <td> 17, Dez, 2023</td>
-                                            <td><p class="status aguardando">Aguardando</p></td>
-                                            <td><strong>R$10,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> 2 </td>
-                                            <td><img src="assets/img/isagi.jpg" alt=""></td>
-                                            <td> FSA </td>
-                                            <td> 28, Dez, 2023</td>
-                                            <td><p class="status atendendo">Atendendo</p></td>
-                                            <td><strong>R$25,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> 3 </td>
-                                            <td><img src="assets/img/isagi.jpg" alt=""></td>
-                                            <td> FSA </td>
-                                            <td> 12, Dez, 2023</td>
-                                            <td><p class="status concluido">Concluído</p></td>
-                                            <td><strong>R$30,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td> 4 </td>
-                                            <td><img src="assets/img/isagi.jpg" alt=""></td>
-                                            <td> FSA </td>
-                                            <td> 04, Dez, 2023</td>
-                                            <td><p class="status cancelado">Cancelado</p></td>
-                                            <td><strong>R$20,00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </section>
-                            <!--<h2>Nenhum agendamento por aqui</h2>-->
-                            <!--<img class="gif" src="assets/img/House searching_purple.gif" alt="searchGif">-->
-                        </div>
-                    </div>
-                    <div class="left-content">
-                        <h1>Agendamento</h1>
-                        <h3>Nenhum agendamento selecionado</h3>
-                        <img class="gif" src="assets/img/House searching_blue.gif" alt="searchGif">
-                        <h3>Selecione um agendamento para visualizar os detalhes</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
+        <!--- Aplicando vue.js--->
+        
+        <div id="app"></div>
+        
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
         <script>
             var app = new Vue({
+
             el: '#app',
 
+                /* Conteudo */
+
             template: `
+            <section>
+            <div class="container">
+                <div class="row">
+                    <h1 class="title">Agenda</h1>
+                    <button v-on:click="toggleModal" id="open-modal">Novo Agendamento</button>
+                </div>
+                    <div id="fade" class="hide"></div>
+                    <div id="modal" class="hide">
+                    <div class="modal-header">
+                        <h2>Agendamento</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Nome</h5>
+                        <input type="text" placeholder="Nome do Cliente" list="faixa">
+                        <datalist id="faixa">
+                            <option value="">Nome</option>
+                            <option>Cliente 1</option>
+                            <option>Cliente 2</option>
+                            <option>Cliente 3</option>
+                        </datalist>
+                        <h5>Pet</h5>
+                        <input v-model="name" type="text" placeholder="Nome do Pet" list="faixa2">
+                        <datalist id="faixa2">
+                            <option value="">Nome</option>
+                            <option>Pet</option>
+                            <option>Petzinho</option>
+                            <option>Auau</option>
+                        </datalist>
+                        <h5>Raça</h5>
+                        <input v-model="raca" type="text" placeholder="Raça do animal" list="faixa4">
+                        <datalist id="faixa4">
+                            <option value="">Nome</option>
+                            <option>Raça1</option>
+                            <option>Raça2</option>
+                            <option>Raça3</option>
+                        </datalist>
+                        <h5>Serviço</h5>
+                        <input type="text" placeholder="Serviço" list="faixa3">
+                        <datalist id="faixa3">
+                            <option value="">Nome</option>
+                            <option>Banho</option>
+                            <option>Tosa</option>
+                            <option>Banho e Tosa</option>
+                        </datalist>
+                        <div class="modal-footer">
+                            <button v-on:click="addPet" type="submit" class="confirm">Confirmar</button>
+                            <button v-on:click="toggleModal" id="close-modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="content">
+                        <div class="main-content">
+                            <h1 class="date">< 15 de Fev 2023 ></h1>
+                            <div class="boxContent">
+                                <hr />
+                                <section class="table_body">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Pet</th>
+                                                <th>Nome</th>
+                                                <th>Raça</th>
+                                                <th>Status</th>
+                                                <th>Valor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-for="comment in comments">
+                                                <td> 1 </td>
+                                                <td><img src="assets/img/isagi.jpg" alt=""></td>
+                                                <td> {{comment.name}} </td>
+                                                <td> {{comment.pet}}</td>
+                                                <td><p class="status aguardando">Aguardando</p></td>
+                                                <td><strong>R$10,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                                <!--<h2>Nenhum agendamento por aqui</h2>-->
+                                <!--<img class="gif" src="assets/img/House searching_purple.gif" alt="searchGif">-->
+                            </div>
+                        </div>
+                        <div class="left-content">
+                            <h1>Agendamento</h1>
+                            <h3>Nenhum agendamento selecionado</h3>
+                            <img class="gif" src="assets/img/House searching_blue.gif" alt="searchGif">
+                            <h3>Selecione um agendamento para visualizar os detalhes</h3>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+            `
             
-            `,
+            ,
 
 
             data: {
-                message: 'Olá Vue!'
+                comments: [],
+                name: '',
+                pet: ''
+            },
+
+            methods: {
+                /* Metodo modal */
+
+                toggleModal(){
+                    const openModalButton = document.querySelector("#open-modal");
+                    const closeModalButton = document.querySelector("#close-modal");
+                    const modal = document.querySelector("#modal");
+                    const fade = document.querySelector("#fade");
+                    
+                    modal.classList.toggle("hide");
+                    fade.classList.toggle("hide");
+                    
+                },
+                /* Metodo adiciona agendamento */
+
+                addPet(){
+                    this.comments.push({
+                        name: this.name,
+                        pet: this.raca
+                    });
+                }
             }
-
-
             })
         </script>
     </body>
